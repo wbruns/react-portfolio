@@ -14,8 +14,14 @@ function Nav(props) {
                             About me
                         </a>
                     </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <li>
+                        Portfolio
+                    </li>
+                    <li className="mx-2">
                         <span onClick={() => setContactSelected(true)}>Contact</span>
+                    </li>
+                    <li>
+                        Resume
                     </li>
                 </ul>
             </nav>
