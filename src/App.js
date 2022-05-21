@@ -1,21 +1,26 @@
-import './App.css';
+import React, { useState } from 'react';
+import Nav from './components/Nav';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      />
+      <main>
+        {!contactSelected ? (
+          <>
+            <About />
+          </>
+        ) : (
+            <Contact />
+        )}
+      </main>
     </div>
   );
 }
