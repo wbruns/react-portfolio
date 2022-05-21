@@ -7,12 +7,6 @@ function Nav(props) {
     } = props;
 
     return (
-        <header className='flex-row px-1'>
-            <h2>
-                <a data-testid="link" href="/">
-                    Will Bruns
-                </a>
-            </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
@@ -25,7 +19,6 @@ function Nav(props) {
                     </li>
                 </ul>
             </nav>
-        </header>
     );
 }
 
