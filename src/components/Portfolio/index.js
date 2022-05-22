@@ -1,42 +1,49 @@
-import React from 'react';
-import Project from '../Project';
+import React, { useState } from 'react';
 
 function Portfolio() {
-    const projects = [
+    const [projects] = useState([
         {
             name: 'Shop',
             repoLink: 'https://github.com/MeghanPaul/Shop',
             deployedLink: 'https://peaceful-cove-22084.herokuapp.com/',
-            img: '../../assets/shop-screen.png'
+            img: 'shop-screen.png'
         },
         {
             name: 'Calorie Counter',
             repoLink: 'https://github.com/MickieBurch/Calorie-counter',
             deployedLink: 'https://mickieburch.github.io/Calorie-counter/',
-            img: '../../assets/calorie_counter_functionality.png'
+            img: 'calorie_counter_functionality.png'
 
         },
         {
             name: 'Note Taker',
             repoLink: 'https://github.com/wbruns/express-note-taker',
             deployedLink: 'https://shrouded-oasis-66135.herokuapp.com/',
-            img: '../../assets/note-taker.png'
+            img: 'note-taker.png'
         },
         {
             name: 'Work Day Scheduler',
             repoLink: 'https://github.com/wbruns/work-day-scheduler',
             deployedLink: 'https://wbruns.github.io/work-day-scheduler/',
-            img: '../../assets/work-day-scheduler.png'
+            img: 'work-day-scheduler.png'
         }
-    ]
+    ]);
 
     return (
         <section>
             <h2 id='portfolio'>Portfolio</h2>
             {projects.map((project) => {
-                return(
+                
+                return (
                     <div key={project.name}>
-                        <Project project={project} />
+                        <h3>{project.name}</h3>
+                        <img
+                            src={require(`../../assets/${project.img}`)}
+                            alt={project.name}
+                            key={project.name}
+                        />
+                        <a target="_blank" rel="noopener noreferrer" href={project.repoLink}>GitHub</a>
+                        <a target="_blank" rel="noopener noreferrer" href={project.deployedLink}>Deployed site</a>
                     </div>
                 );
             })}
