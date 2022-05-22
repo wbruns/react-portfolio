@@ -12,11 +12,6 @@ function Nav(props) {
     return (
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About me
-                        </a>
-                    </li>
                     {navOptions.map((option) => (
                         <li className={`mx-1 ${
                             currentNav.name === option.name && !contactSelected && 'navActive'
