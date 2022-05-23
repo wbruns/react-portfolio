@@ -7,7 +7,6 @@ Hi this is my portfolio built using React.  It showcases some of my work as a fu
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Questions](#questions)
 
 ## **Installation**
@@ -17,10 +16,6 @@ To use our website, simply head over to [Shop](https://peaceful-cove-22084.herok
 ## **Usage**
 
 This page is designed for you to explore!  Check out the different sections, like my Portfolio page that hosts some of the projects I've created and Resume, Contact and About sections where you can learn a little more about me and even reach out if you'd like
-
-## **Screenshots**
-
-![login page](./public/images/shop-login.png)
 
 ## **Questions**
 
