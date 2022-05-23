@@ -30,20 +30,21 @@ function Portfolio() {
     ]);
 
     return (
-        <section>
-            <h2 id='portfolio'>Portfolio</h2>
+        <section className='containter-fluid mx-2'>
+            <h2 className='text-center' id='portfolio'>Portfolio</h2>
             {projects.map((project) => {
                 
                 return (
-                    <div key={project.name}>
+                    <div key={project.name} className="row py-2 my-2">
                         <h3>{project.name}</h3>
                         <img
                             src={require(`../../assets/${project.img}`)}
                             alt={project.name}
                             key={project.name}
+                            className="w-100"
                         />
-                        <a target="_blank" rel="noopener noreferrer" href={project.repoLink}>GitHub</a>
-                        <a target="_blank" rel="noopener noreferrer" href={project.deployedLink}>Deployed site</a>
+                        <a className='text-muted mx-1' target="_blank" rel="noopener noreferrer" href={project.repoLink}>GitHub</a>
+                        <a className='text-muted mx-1' target="_blank" rel="noopener noreferrer" href={project.deployedLink}>Deployed site</a>
                     </div>
                 );
             })}

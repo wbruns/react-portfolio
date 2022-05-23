@@ -32,18 +32,18 @@ function Contact() {
 
     return (
         <section>
-            <h1 data-testid="contact">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+            <h2 className='text-center' data-testid="contact">Contact me</h2>
+            <form className='align-items-center' id="contact-form" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Name:</label><br/>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label htmlFor="email">Email address:</label>
+                    <label htmlFor="email">Email address:</label><br/>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label htmlFor="message">Message:</label>
+                    <label htmlFor="message">Message:</label><br/>
                     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
                 </div>
                 {/* conditionally render an error message */}
@@ -52,9 +52,9 @@ function Contact() {
                         <p className='error-text'>{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit" data-testid="submit">Submit</button>
+                <button className='btn btn-light border-dark' type="submit" data-testid="submit">Submit</button>
             </form>
-            <h3>You can also reach me at:</h3>
+            <h5>You can also reach me at:</h5>
             <div>
                 <p>Email: wbruns07@gmail.com</p>
                 <p>Github: https://github.com/wbruns</p>

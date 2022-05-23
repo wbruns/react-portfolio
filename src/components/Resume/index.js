@@ -4,12 +4,12 @@ import myResume from '../../assets/Resume - Will Bruns.pdf';
 function Resume() {
     return (
         <div>
-            <h3>Resume</h3>
+            <h2 className='text-center'>Resume</h2>
             <div>
                 <p>Download my <a href={myResume} download="Resume - Will Bruns.pdf">resume here</a></p>
             </div>
             <h4>Front-end Skills</h4>
-            <ul>
+            <ul className='list-unstyled ml-4'>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -20,7 +20,7 @@ function Resume() {
                 <li>Handlebars</li>
             </ul>
             <h4>Back-end Skills</h4>
-            <ul>
+            <ul className='list-unstyled ml-4'>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MySQL - Sequelize</li>

@@ -11,9 +11,9 @@ function Nav(props) {
 
     return (
             <nav>
-                <ul className="flex-row">
+                <ul className="row list-unstyled">
                     {navOptions.map((option) => (
-                        <li className={`mx-1 ${
+                        <li className={`mx-1 col text-dark text-decoration-none badge-light ${
                             currentNav.name === option.name && !contactSelected && 'navActive'
                         }`}
                         key={option.name}
@@ -28,7 +28,7 @@ function Nav(props) {
                             </span>
                         </li>
                     ))}
-                    <li className="mx-2">
+                    <li className="mx-1 col text-dark text-decoration-none badge-light">
                         <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
                 </ul>

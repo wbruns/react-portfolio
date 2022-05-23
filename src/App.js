@@ -17,7 +17,7 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
   console.log(currentNav);
   return (
-    <div>
+    <div className='container-fluid'>
       <Header 
         navOptions={navOptions}
         currentNav={currentNav}
