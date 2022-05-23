@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/react-portfolio/static/js/main.78598d4a.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Resume - Will Bruns.pdf": "/react-portfolio/static/media/Resume - Will Bruns.86f93701dc6dde3161c9.pdf",
+    "static/media/spain-selfie.jpg": "/react-portfolio/static/media/spain-selfie.1047c7265e2b38839ddd.jpg",
+    "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.1e5d06254e1ca9e855e7.png",
+    "static/media/calorie_counter_functionality.png": "/react-portfolio/static/media/calorie_counter_functionality.ee4746bfcc2c2ac4c0be.png",
+    "static/media/shop-screen.png": "/react-portfolio/static/media/shop-screen.85773d32919144008b3d.png",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.07497499d59f76bfb19e.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.e6c13ad2.css.map": "/react-portfolio/static/css/main.e6c13ad2.css.map",
+    "main.78598d4a.js.map": "/react-portfolio/static/js/main.78598d4a.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.78598d4a.js"
+  ]
+}
