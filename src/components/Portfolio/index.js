@@ -26,6 +26,12 @@ function Portfolio() {
             repoLink: 'https://github.com/wbruns/work-day-scheduler',
             deployedLink: 'https://wbruns.github.io/work-day-scheduler/',
             img: 'work-day-scheduler.png'
+        },
+        {
+            name: 'Wordy-Hangman Game',
+            repoLink: 'https://github.com/wbruns/wordy',
+            deployedLink: 'https://wordy-hangman.herokuapp.com/',
+            img: 'wordy.png'
         }
     ]);
 
